@@ -1,0 +1,13 @@
+syntax = "proto3";
+package hello;
+
+option go_package = "./hello";
+
+message Fields {
+  map<int32, int32> f1 = 1;
+  int64 f2 = 2;
+  sint64 f3 = 3;
+  double f4 = 4;
+  string f5 = 5;
+  float f6 = 6;
+}
